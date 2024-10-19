@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AppConfigReader" Version="9.1.6" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Communication" Version="2.0.4" />
+    <PackageReference Include="DataHelper" Version="2.0.5" />
+  </ItemGroup>
+
+</Project>

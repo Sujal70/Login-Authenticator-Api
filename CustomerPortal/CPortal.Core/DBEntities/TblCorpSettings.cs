@@ -1,0 +1,140 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace LT.Core.DBEntities
+{
+    /// <summary>
+    /// DB entity with seperate Schema as ACL in same LT DB 
+    /// </summary>
+    public class TblCorpSettings
+    {
+        [Key]
+        public int Corporate_No { get; set; }
+        public int? ActiveFolder { get; set; }
+        public bool? IsShowMessage { get; set; }
+        public bool IsTouchRules { get; set; }
+        public bool IsPrePopulate { get; set; }
+        public bool IsPostPopulate { get; set; }
+        public string SalesForceId { get; set; }
+        public int NoOfQuestLimit { get; set; }
+        public string ApiSessionId { get; set; }
+        public DateTime? ApiloginTime { get; set; }
+        public bool IsPoweredByClient { get; set; }
+        public string CustomUrl { get; set; }
+        public bool? IsMySm { get; set; }
+        public bool? IsMyDm { get; set; }
+        public bool? IsMyRm { get; set; }
+        public bool? IsMyEm { get; set; }
+        public bool? IsOtherSm { get; set; }
+        public bool? IsOtherDm { get; set; }
+        public bool? IsOtherRm { get; set; }
+        public bool? IsOtherEm { get; set; }
+        public bool? IsNewListRead { get; set; }
+        public bool? IsNewListEdit { get; set; }
+        public bool? IsNewSavedReport { get; set; }
+        public bool IsCustomReport { get; set; }
+        public DateTime? PasswordChangeDate { get; set; }
+        public bool IsLockAccount { get; set; }
+        public bool IsExpirePasswordAfterDays { get; set; }
+        public bool IsOldPassword { get; set; }
+        public bool IsAccountLocked { get; set; }
+        public DateTime? AccountLockedDate { get; set; }
+        public short AccountLockedCounter { get; set; }
+        public bool IsMarkedForDeletion { get; set; }
+        public bool IsAssessmentSurvey { get; set; }
+        public bool? IsAdvBranching { get; set; }
+        public bool IsConditionalQuestion { get; set; }
+        public bool? IsAccountSecuritySettings { get; set; }
+        public string GcloginId { get; set; }
+        public string GcPassword { get; set; }
+        public string DefaultSurveyExpiry { get; set; }
+        public string DefaultAlreadyParticipated { get; set; }
+        public string DefaultPartialyParticipated { get; set; }
+        public string DefaultThankYou { get; set; }
+        public bool? IsViralSurvey { get; set; }
+        public string FilterYear { get; set; }
+        public short StartingMonth { get; set; }
+        public bool? IsYearMsg { get; set; }
+        public int PpdailyEmailCount { get; set; }
+        public string GoogleAnalyticsId { get; set; }
+        public bool IsK12reports { get; set; }
+        public bool? IsAccountBlocked { get; set; }
+        public bool IsNewResponseTable { get; set; }
+        public bool IsDataMigrationInProcess { get; set; }
+        public decimal SmsAlloted { get; set; }
+        public decimal SmsRemAllotted { get; set; }
+        public bool? Isfirstlogon { get; set; }
+        public decimal WorkflowManagerId { get; set; }
+        public bool IsEngagment { get; set; }
+        public bool IsBlockIp { get; set; }
+        public bool? IsShowExpiryPage { get; set; }
+        public bool IsAdvanceAddquestion { get; set; }
+        public string Error_SurveyUnavailable { get; set; }
+        public bool? IsFilterYearSaved { get; set; }
+        public bool? IsSalesForceAccount { get; set; }
+        public string SalesForcePassword { get; set; }
+        public byte AccountSummaryType { get; set; }
+        public decimal? SubUserCostPerMonth { get; set; }
+        public decimal? SubUserCostPerYear { get; set; }
+        public decimal? AccountCostPerMonth { get; set; }
+        public decimal? AccountCostPerYear { get; set; }
+        public decimal OfferId { get; set; }
+        public string PaymentType { get; set; }
+        public DateTime? NextChargeDate { get; set; }
+        public int BufferDaysAllowed { get; set; }
+        public DateTime? PaymentTransactionDate { get; set; }
+        public DateTime? PaymentRejectDate { get; set; }
+        public bool? IsPaymentReceived { get; set; }
+        public int PaymentRejectTransactionId { get; set; }
+        public DateTime? MarkForDeletionDate { get; set; }
+        public string FaceBookId { get; set; }
+        public string GoogleId { get; set; }
+        public DateTime? RecurringDay { get; set; }
+        public bool? IsEnable { get; set; }
+        public bool? IsScannerReadySurvey { get; set; }
+        public bool? IsQuickAccess { get; set; }
+        public DateTime? Blocked_Date { get; set; }
+        public short? Cancelledby { get; set; }
+        public int IsForcedBlock { get; set; }
+        public DateTime? Admincanceldate { get; set; }
+        public bool? IsMultipleLoginAlert { get; set; }
+        public bool? IsEmailRelay { get; set; }
+        public int? IsDmemailSettingsPop { get; set; }
+        public bool? IsChatEnabled { get; set; }
+        public byte? Last_Used_Tool { get; set; }
+        public bool? IsRemoveBranding { get; set; }
+        public string MobileOs { get; set; }
+        public string DefaultResponseLimit { get; set; }
+        public string Sf_Instance_Url { get; set; }
+        public string SalesForceRefresh_token { get; set; }
+        public bool? Is2StepAuthEnabled { get; set; }
+        public int? SfaccountType { get; set; }
+        public string Cx_Col_Last_Sorted { get; set; }
+        public bool? IsAllowedPushDataToSf { get; set; }
+        public bool? IsAllowedImportReadDataFromSf { get; set; }
+        public bool? IsAllowedViewActivityLogSf { get; set; }
+        public bool? IsNewLang { get; set; }
+        public bool IsHideQbquestionPreview { get; set; }
+        public bool IsHideQuestionPreview { get; set; }
+        public int EmailQueueNo { get; set; }
+        public string Gdprurl { get; set; }
+        public int? GdprdataId { get; set; }
+        public int? Gdproption { get; set; }
+        public bool? IsTextAnalysis { get; set; }
+        public string DefaultPartialyParticipatedMultiLink { get; set; }
+        public string MobileId { get; set; }
+        public string AppleId { get; set; }
+        public bool IsEmailSendingSuspended { get; set; }
+        public bool IsSubscribedToBlog { get; set; }
+        public bool? IsSsologinOnly { get; set; }
+        public bool IsTwakChecked { get; set; }
+        public bool IsSocialMediaSignUp { get; set; }
+        public bool IsAutoSocialLinked { get; set; }
+        public bool? IsNewFileLibrary { get; set; }
+        public string GoogleApiid { get; set; }
+        public string GoogleAPI_RefreshToken { get; set; }
+        public string MicrosoftApiid { get; set; }
+        public string Microsoft_RefreshToken { get; set; }
+        public string AppMixer_Token { get; set; }
+    }
+}
+

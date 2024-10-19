@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\ITAM.Core\ModelEntities\SurveyCorporateModel.cs" Link="SurveyCorporateModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ITAM.Core\ITAM.Core.csproj" />
+    <ProjectReference Include="..\ITAM.Data\ITAM.Data.csproj" />
+  </ItemGroup>
+
+</Project>

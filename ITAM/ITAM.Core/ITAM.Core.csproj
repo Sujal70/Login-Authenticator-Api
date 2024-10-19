@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppConfigReader\AppConfigReader.csproj" />
+    <ProjectReference Include="..\DataHelper\DataHelper.csproj" />
+    <ProjectReference Include="..\LoggerServiceInvoker\LoggerServiceInvoker.csproj" />
+  </ItemGroup>
+
+</Project>

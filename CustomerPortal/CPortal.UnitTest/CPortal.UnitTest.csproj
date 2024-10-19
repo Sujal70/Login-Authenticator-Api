@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MockObject\**" />
+    <Compile Remove="MoqData\**" />
+    <EmbeddedResource Remove="MockObject\**" />
+    <EmbeddedResource Remove="MoqData\**" />
+    <None Remove="MockObject\**" />
+    <None Remove="MoqData\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\mpatel\.nuget\packages\microsoft.testplatform.testhost\17.5.0\build\netcoreapp3.1\x64\testhost.dll" />
+    <Content Remove="C:\Users\mpatel\.nuget\packages\microsoft.testplatform.testhost\17.5.0\build\netcoreapp3.1\x64\testhost.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+    <None Remove="C:\Users\mpatel\.nuget\packages\xunit.runner.visualstudio\2.5.4\build\net6.0\xunit.runner.reporters.netcoreapp10.dll" />
+    <None Remove="C:\Users\mpatel\.nuget\packages\xunit.runner.visualstudio\2.5.4\build\net6.0\xunit.runner.utility.netcoreapp10.dll" />
+    <None Remove="C:\Users\mpatel\.nuget\packages\xunit.runner.visualstudio\2.5.4\build\net6.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+    <PackageReference Include="Moq" Version="4.20.70" />
+    <PackageReference Include="coverlet.collector" Version="3.2.0" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="9.27.0.93347">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.14" />
+    <PackageReference Include="xunit" Version="2.6.2" />
+    <PackageReference Include="Xunit.DependencyInjection" Version="8.9.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CPortal.Api\CPortal.Api.csproj" />
+  </ItemGroup>
+
+</Project>
