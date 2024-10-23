@@ -12,8 +12,9 @@ namespace ITAM.Application.BusinessInterfaces
 {
     public interface IUserLoginServices 
     {
-        public UserLogin AuthenticateUser(string username, string password,Message message);
+        public UserLogin AuthenticateUser(string username, string password,Message message,string ipAddress);
         public void PostUser(LoginSearchEntity loginSearchEntity, Message message);
         public void DeleteUser(int userId, Message message);
+        public void logUserLogin(string username, string ipAddress);
     }
 }

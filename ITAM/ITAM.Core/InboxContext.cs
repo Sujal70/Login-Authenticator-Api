@@ -30,6 +30,7 @@ namespace LT.Core
         public DbSet<SystemCodes> SystemCodes { get; set; }
         public DbSet<AssetDetail> AssetDetail { get; set; }
         public DbSet<UserLogin> SujalUser1059 { get; set; }
+        public DbSet<HistoryData> LoginHistory1059 { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

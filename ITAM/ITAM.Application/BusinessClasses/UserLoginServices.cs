@@ -25,7 +25,7 @@ namespace ITAM.Application.BusinessClasses
             _userLoginRepo = userLoginRepo;
             _loginAttemptService = loginAttemptService;
         }
-        public UserLogin AuthenticateUser(string username,string password , Message message)
+        public UserLogin AuthenticateUser(string username,string password , Message message, string ipAddress)
         {
             if (_loginAttemptService.captchaShow(username)){
 
@@ -41,6 +41,7 @@ namespace ITAM.Application.BusinessClasses
             {
                 // Reset failed attempts on successful login
                 _loginAttemptService.ResetFailedAttempts(username);
+                logUserLogin(username, ipAddress);
                 return res;
             }
             else
@@ -86,6 +87,11 @@ namespace ITAM.Application.BusinessClasses
 
             //_userLoginRepo.deleteUser(userId);
             //return ;
+        }
+        public void logUserLogin(string username, string ipAddress)
+        {
+            Console.WriteLine($"User {username} logged in from ipAddress {ipAddress}");
+            Console.WriteLine($"User {username} logged in from ipAddress {ipAddress}");
         }
     }
 }
